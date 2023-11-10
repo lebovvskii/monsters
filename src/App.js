@@ -25,7 +25,7 @@ class App extends Component {
         fetch(this.URL)
             .then(response => response.json())
             .then((users) => this.setState(()=> {
-                return{ monsters: users}
+                return{monsters: users}
             }))
 
     }     
@@ -38,8 +38,8 @@ class App extends Component {
         })
         return(
             <div className='App'>
-                <SearchBox onChangeHandler={onSearchChange} placeholder="search monsters"/>
-                <CardList monsters={filteredMonsters}/> 
+                <SearchBox onChangeHandler={onSearchChange} placeholder="search monsters" className="monsters-search-box"/>
+                <CardList monsters={filteredMonsters} /> 
             </div>
         );
     }
