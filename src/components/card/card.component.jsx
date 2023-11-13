@@ -1,8 +1,8 @@
-import './card.styles.css'
+import "./card.styles.css";
 
-export const Card = ({ monster}) => {
+export const Card = ({ monster }) => {
     const { id, name, email } = monster;
-    
+
     return (
         <div className="card-container">
             <img
@@ -11,6 +11,6 @@ export const Card = ({ monster}) => {
             />
             <h2>{name}</h2>
             <p>{email}</p>
-        </div>  
-    )
-}
+        </div>
+    );
+};
